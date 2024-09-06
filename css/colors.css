@@ -1,0 +1,18 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --blue: #879db5;
+  --green: #7aae8e;
+
+  --blue-dark-50: color-mix(in oklch, var(--blue), var(--black) 50%);
+  --blue-dark-25: color-mix(in oklch, var(--blue), var(--black) 25%);
+  --blue-light-25: color-mix(in oklch, var(--blue), var(--white) 25%);
+  --blue-light-50: color-mix(in oklch, var(--blue), var(--white) 50%);
+  --blue-light-75: color-mix(in oklch, var(--blue), var(--white) 75%);
+
+  --green-dark-50: color-mix(in oklch, var(--green), var(--black) 50%);
+  --green-dark-25: color-mix(in oklch, var(--green), var(--black) 25%);
+  --green-light-25: color-mix(in oklch, var(--green), var(--white) 25%);
+  --green-light-50: color-mix(in oklch, var(--green), var(--white) 50%);
+  --green-light-75: color-mix(in oklch, var(--green), var(--white) 75%);
+}

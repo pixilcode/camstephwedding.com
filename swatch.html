@@ -1,0 +1,80 @@
+<title>Swatch</title>
+<link href="/css/colors.css" rel="stylesheet">
+<style>
+	div > div {
+		display: block;
+		content: 'hello';
+	}
+
+	div:has(div) {
+		display: grid;
+		grid-auto-columns: 200px;
+		grid-auto-flow: column;
+		height: 200px;
+	}
+
+	.darker-blue {
+		background-color: var(--blue-dark-50);
+	}
+
+	.dark-blue {
+		background-color: var(--blue-dark-25);
+	}
+
+	.blue {
+		background-color: var(--blue);
+	}
+
+	.light-blue {
+		background-color: var(--blue-light-25);
+	}
+
+	.lighter-blue {
+		background-color: var(--blue-light-50);
+	}
+
+	.lightest-blue {
+		background-color: var(--blue-light-75);
+	}
+
+	.darker-green {
+		background-color: var(--green-dark-50);
+	}
+
+	.dark-green {
+		background-color: var(--green-dark-25);
+	}
+
+	.green {
+		background-color: var(--green);
+	}
+
+	.light-green {
+		background-color: var(--green-light-25);
+	}
+
+	.lighter-green {
+		background-color: var(--green-light-50);
+	}
+
+	.lightest-green {
+		background-color: var(--green-light-75);
+	}
+</style>
+<h1>Swatch</h1>
+<div>
+	<div class="darker-blue"></div>
+	<div class="dark-blue"></div>
+	<div class="blue"></div>
+	<div class="light-blue"></div>
+	<div class="lighter-blue"></div>
+	<div class="lightest-blue"></div>
+</div>
+<div>
+	<div class="darker-green"></div>
+	<div class="dark-green"></div>
+	<div class="green"></div>
+	<div class="light-green"></div>
+	<div class="lighter-green"></div>
+	<div class="lightest-green"></div>
+</div>

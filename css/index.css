@@ -10,7 +10,7 @@ header {
   height: 10rem;
   width: 10rem;
   margin: 0.5rem;
-  box-shadow: 0 2.5px 5px 2px var(--blue-dark-200);
+  box-shadow: 0 2.5px 5px 2px var(--blue-dark-50);
 }
 
 header p {
@@ -243,7 +243,6 @@ main.print, .print-background { display: none; }
     padding: 0.125in;
     width: var(--body-content-width);
     height: var(--body-content-height);
-    border: var(--blue-dark-100) 0.02in solid;
   }
 
   header, main, footer {
@@ -255,7 +254,7 @@ main.print, .print-background { display: none; }
     height: 1in;
     width: 1in;
     margin: 0;
-    box-shadow: 0 0.01in 0.04in 0.02in var(--blue-dark-200);
+    box-shadow: 0 0.01in 0.04in 0.02in var(--blue-dark-50);
   }
   
   header {
@@ -272,7 +271,7 @@ main.print, .print-background { display: none; }
   }
   
   .names {
-    color: var(--blue-dark-200);
+    color: var(--blue-dark-50);
   }
 
   header p {
@@ -307,7 +306,7 @@ main.print, .print-background { display: none; }
   main .divider-line {
     height: 50%;
     width: 0.005in;
-    background-color: var(--blue-dark-100);
+    background-color: var(--blue-dark-25);
     opacity: 50%
   }
   
@@ -317,7 +316,7 @@ main.print, .print-background { display: none; }
   }
   
   main a, main a:visited {
-    color: var(--blue-dark-100);
+    color: var(--blue-dark-25);
     font-weight: bold;
     text-decoration: none;
     font-size: 9pt
