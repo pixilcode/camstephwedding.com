@@ -1,7 +1,7 @@
 :root {
   --white: #ffffff;
   --black: #000000;
-  --blue: #879db5;
+  --blue: #6495ed;
   --green: #7aae8e;
 
   --blue-dark-50: color-mix(in oklch, var(--blue), var(--black) 50%);

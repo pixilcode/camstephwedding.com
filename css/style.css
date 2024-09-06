@@ -1,14 +1,14 @@
 :root {
-  --shadow-grey: var(--blue);
+  --shadow-grey: var(--blue-dark-25);
 
   --cursive-font: "MonteCarlo", cursive;
   --serif-font: "Noto Serif KR", serif;
   
   --background-light-color: var(--blue-light-75);
-  --background-light-img: url("/images/background.jpg");
+  --background-light-img: url("/images/background/background.jpg");
   
   --background-dark-color: var(--blue-light-50);
-  --background-dark-img: url("/images/background-dark.jpg");
+  --background-dark-img: url("/images/background/background-dark.jpg");
   
   --button-border-radius: 0.5rem;
   --card-border-radius: 2rem;
