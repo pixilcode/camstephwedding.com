@@ -78,7 +78,7 @@ button:hover, a:hover {
     box-shadow: 0 0 8px 1px var(--shadow-grey-button);
 }
 
-input, textarea {
+input, textarea, select {
   border: 1px solid var(--green);
   border-radius: 4px;
   background-color: var(--white);
