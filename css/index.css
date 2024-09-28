@@ -1,3 +1,22 @@
+/** SCREEN BACKGROUND **/
+
+.screen-background-wrapper {
+  position: absolute;
+  
+  top: 0;
+  width: 100%;
+  
+  display: flex;
+  justify-content: center;
+}
+
+.screen-background {
+  opacity: 75%;
+  z-index: -1;
+  
+  width: min(80vw, 32rem);
+}
+
 /*** HEADER ***/
 
 header {
@@ -55,22 +74,20 @@ section.event-details .invitation {
   font-style: italic;
 }
 
+section.event-details .locations {
+  display: flex;
+  flex-direction: column;
+  
+  margin: 2rem 0;
+  gap: 2rem;
+}
+
 section.event-details .date-time, .location {
   font-variant: small-caps;
   font-weight: 700;
 }
 
-section.event-details .date-time {
-  margin-top: 1rem;
-}
-
-section.event-details .location {
-  margin-bottom: 2rem;
-}
-
 section.event-details .extra-info {
-  margin-top: 2rem;
-  
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -106,9 +123,11 @@ a.driving-instructions-link .arrow-icon {
 /*** GENERIC CARD ***/
 
 section.card {
-  background-color: var(--background-light-color);
-  background-image: var(--background-light-img);
-  box-shadow: 0 0 8px 1px var(--shadow-grey);
+  background-color: var(--background-card-color);
+  background-image: var(--background-card-img);
+  background-size: 100px;
+  
+  box-shadow: 0 0 8px 1px var(--shadow-grey-card);
   border-radius: var(--card-border-radius);
   padding: 2rem;
   width: min(80vw, 25rem);
@@ -118,10 +137,20 @@ section.card {
   gap: 1.5rem;
 }
 
+section.card * {
+  color: var(--green-dark-25);
+}
+
+section.card button, section.card.a {
+  color: var(--green-dark-50);
+}
+
 section.card h2 {
   font-family: var(--serif-font);
   font-weight: 700;
   font-size: 2rem;
+  
+  color: var(--green-dark-25);
   
   display: flex;
   flex-direction: row;
@@ -240,6 +269,8 @@ main.print, .print-background { display: none; }
     z-index: -1;
     opacity: 0.75;
   }
+  
+  .screen-background-wrapper { display: none; }
   
   .body-wrapper {
     box-sizing: content-box;

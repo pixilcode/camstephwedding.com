@@ -1,5 +1,7 @@
 :root {
   --shadow-grey: var(--blue-dark-25);
+  --shadow-grey-button: var(--green-dark-25);
+  --shadow-grey-card: var(--green-dark-25);
 
   --cursive-font: "MonteCarlo", cursive;
   --serif-font: "Noto Serif KR", serif;
@@ -7,7 +9,10 @@
   --background-light-color: var(--blue-light-75);
   --background-light-img: url("/images/background/background.jpg");
   
-  --background-dark-color: var(--blue-light-50);
+  --background-card-color: var(--green-light-75);
+  --background-card-img: url("/images/background/background-green.jpg");
+  
+  --background-dark-color: var(--green-light-50);
   --background-dark-img: url("/images/background/background-dark.jpg");
   
   --button-border-radius: 0.5rem;
@@ -38,7 +43,7 @@ footer {
 }
 
 button, a {
-  color: #0d2859;
+  color: var(--green-dark-50);
   font-family: var(--serif-font);
   font-size: 1.25rem;
   font-variant: small-caps;
@@ -51,11 +56,12 @@ button, a {
   
   background-color: var(--background-dark-color);
   background-image: var(--background-dark-img);
+  background-size: 100px;
   
   border: none;
   border-radius: var(--button-border-radius);
   
-  box-shadow: 0 0 4px 1px var(--shadow-grey);
+  box-shadow: 0 0 4px 1px var(--shadow-grey-button);
   transition: box-shadow 0.15s ease;
   
   display: flex;
@@ -69,14 +75,14 @@ p {
 }
 
 button:hover, a:hover {
-    box-shadow: 0 0 8px 1px var(--shadow-grey);
+    box-shadow: 0 0 8px 1px var(--shadow-grey-button);
 }
 
 input, textarea {
-  border: 1px solid var(--blue);
+  border: 1px solid var(--green);
   border-radius: 4px;
   background-color: var(--white);
-  color: var(--blue-dark-50);
+  color: var(--green-dark-50);
   padding: 0.25rem;
 }
 

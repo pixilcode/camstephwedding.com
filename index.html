@@ -31,9 +31,11 @@
 
 <body>
 	<div class="body-wrapper">
-		<img src="/images/background/print-background.png" alt="A decorative background image" class="print-background">
+		<div class="screen-background-wrapper">
+			<img src="/images/background/header-background.png" alt="A decorative leaf header" class="screen-background">
+		</div>
 		<header>
-			<img class="header__image" src="/images/couple-photos/couple-profile.png" alt="A picture of Cameron and Stephanie">
+			<img class="header__image" src="/images/couple-photos/couple-profile.jpg" alt="A picture of Cameron and Stephanie">
 			<img class="divider top" src="/images/divider.svg" alt="A decorative divider">
 			<p>
 				Amy and Jason Groesbeck<br>
@@ -54,19 +56,33 @@
 					Cameron and Stephanie, along with their families, invite you
 					to join them in celebrating their marriage
 				</p>
-				<p class="date-time">
-					<time datetime="2024-07-26T19:00-0600">July 26<sup>th</sup>, 2024 @ 7-9pm</time><br>
-				</p>
-				<p class="location">
-					The Reserve<br>
-					1200 Towne Centre Blvd<br>
-					Provo, Utah 84601
-				</p>
-				<a class="driving-instructions-link" href="/driving-instructions">
+				<div class="locations">
+					<div class="open-house card">
+						<h2>Open House</h2>
+						<p class="date-time">
+							<time datetime="2024-11-26T19:30-0600">November 26<sup>th</sup> @ 7:30-9:30pm</time>
+						</p>
+						<p class="location card">
+							867 Ridge Ln<br>
+							Alpine, Utah 84004
+						</p>
+					</div>
+					<div class="reception">
+						<h2>Reception</h2>
+						<p class="date-time">
+							<time datetime="2024-11-30T17:00-0600">November 30<sup>th</sup> @ 5-8pm</time>
+						</p>
+						<p class="location">
+							3700 S Maple Grove Rd<br>
+							Boise, Idaho 83709
+						</p>
+					</div>
+				</div>
+				<!-- <a class="driving-instructions-link" href="/driving-instructions">
 					<img class="compass-icon" src="/images/icons/compass.svg" alt="A compass icon">
 					<span class="label">Directions</span>
 					<img class="arrow-icon" src="/images/icons/arrow-forward.svg" alt="An arrow icon">
-				</a>
+				</a> -->
 				<div class="extra-info">
 					<p>Sunday dress preferred</p>
 					<img class="dot-divider" src="/images/divider-dot.svg" alt="A decorative dot divider">
@@ -119,7 +135,7 @@
 					Your friendship is the only gift we'll ever need! But hey,
 					if you want to gift us something more, we won't complain. 😉
 				</p>
-				<a href="https://www.amazon.com/wedding/share/Amy_Brendon_Bown">
+				<a href="https://www.amazon.com/wedding/registry/2GL0HZQRH8LEN">
 					<span>Registry</span>
 					<img src="/images/icons/arrow-forward.svg" alt="An arrow icon">
 				</a>
@@ -184,6 +200,8 @@
 				</p>
 			</section>
 		</main>
+		<!-- Put the image at the end so it's loaded last -->
+		<img src="/images/background/print-background.png" alt="A decorative background image" class="print-background">
 	</div>
 </body>
 
