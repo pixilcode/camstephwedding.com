@@ -27,6 +27,7 @@
 
 	<!-- scripts -->
 	<script src="/js/index.js" defer></script>
+	<script src="/js/form_update.js" defer></script>
 </head>
 
 <body>
@@ -75,11 +76,12 @@
 						</p>
 					</div>
 				</div>
-				<!-- <a class="driving-instructions-link" href="/driving-instructions">
+				<!-- if they want driving instructions, just remove 'display: none' -->
+				<a class="driving-instructions-link" style="display: none" href="/driving-instructions">
 					<img class="compass-icon" src="/images/icons/compass.svg" alt="A compass icon">
 					<span class="label">Directions</span>
 					<img class="arrow-icon" src="/images/icons/arrow-forward.svg" alt="An arrow icon">
-				</a> -->
+				</a>
 				<div class="extra-info">
 					<p>Sunday dress preferred</p>
 					<img class="dot-divider" src="/images/divider-dot.svg" alt="A decorative dot divider">
@@ -95,6 +97,7 @@
 					if you aren't 100% sure</b>, we'd love to hear from you anyway!
 				</p>
 				<form id="rsvp-form" action="/api/rsvp" method="post" enctype="application/x-www-form-urlencoded">
+					<input type="hidden" name="dream.csrf">
 					<div class="field name-input">
 						<label for="name">Name</label>
 						<input type="text" name="name" placeholder="Your Name" required>
